@@ -30,7 +30,7 @@ if (1==1) { // always
                        array('dctranslationsStacker','initStacker'));
 
     // autoload main class
-    $GLOBALS['__autoload']['dcTranslation'] = dirname(__FILE__).'/class.translations.php';
+    $GLOBALS['__autoload']['dcTranslation'] = dirname(__FILE__).'/inc/class.translations.php';
 
     require dirname(__FILE__).'/_widgets.php';
  }
@@ -57,4 +57,3 @@ class dctranslationsStacker
                                   );
     }
 }
-?>

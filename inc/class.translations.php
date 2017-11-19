@@ -23,8 +23,8 @@ class dcTranslation
   
     public function __construct($core)
     {
-        $this->core =& $core;
-        $this->con =& $this->core->con;
+        $this->core = $core;
+        $this->con = $this->core->con;
         $this->table = $this->core->prefix.'translation';
     }
 
@@ -550,5 +550,3 @@ class dcTranslation
         return $start+$limit;
     }
 }
-
-?>

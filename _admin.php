@@ -12,6 +12,13 @@
 
 if (!defined('DC_CONTEXT_ADMIN')) { exit; }
 
+// check dependance
+if( !file_exists(dirname(__FILE__).'/../stacker/_define.php') ) {
+    $core->error->add(__('The plugin "Stacker" must be present for dcTranslations. http://plugins.dotaddict.org/dc2/details/stacker'));
+} else if( file_exists(dirname(__FILE__).'/../stacker/_disabled') ) {
+    $core->error->add(__('The plugin "Stacker" must not be clear for dcTranslations.'));
+}
+
 if (1==1) {
     $core->addBehavior('adminPostForm',array('translationBehaviors','postForm'));
     $core->addBehavior('adminPostHeaders',array('translationBehaviors','postHeaders'));
@@ -36,10 +43,7 @@ if (1==1) {
 class translationBehaviors {
     public static function postHeaders()
     {
-    
-        return 
-            '<script type="text/javascript" src="index.php?pf=dctranslations/post.js"></script>'.
-            '<link rel="stylesheet" type="text/css" href="index.php?pf=dctranslations/style.css" />';
+        return '<script type="text/javascript" src="index.php?pf=dctranslations/js/post.js"></script>';
     }
     public static function postForm($post) {
         echo translationBehaviors::pageForm($post);
@@ -97,7 +101,7 @@ class translationBehaviors {
                 form::textarea($base,50,5,html::escapeHTML($t_content),'',5*$i+17);
             $rep.=form::hidden($base.'_id',$t_id);
             $rep.=form::hidden($base.'_olang',$t_lang);
-            $rep.='<div class="lockable">'.
+            $rep.='<div'.($i != 0 ? ' class="lockable"':'').'>'.
                 '<p><label>'.__('Basename:').
                 form::field($base.'_url',60,255,html::escapeHTML($t_url),'',5*$i+18).
                 '</label></p>'.
@@ -189,5 +193,3 @@ class translationBehaviors {
         $core->blog->settings->system->put('lang','');
     }
 }
-
-?>

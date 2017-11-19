@@ -13,11 +13,10 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-                      "Posts Translations",         // Name
-                      "Allows to translate posts",  // Description
-                      "Jean-Christophe Dubacq, Franck Paul",     // Author
-                      '1.13',                        // Version
-                      'admin,editor,usage',         // Permissions
-                      500                           // Priority
-                      );
-?>
+    "Posts Translations",                                       // Name
+    "Allows to translate posts",                                // Description
+    "Jean-Christophe Dubacq, Franck Paul, Lepeltier kévin",     // Author
+    '1.14',                                                     // Version
+    'admin,editor,usage',                                       // Permissions
+    500                                                         // Priority
+);

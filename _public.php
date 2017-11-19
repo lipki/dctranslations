@@ -310,8 +310,8 @@ class urlTranslation extends dcUrlHandlers
     }
     public static function lang($args)
     {
-        $_ctx =& $GLOBALS['_ctx'];
-        $core =& $GLOBALS['core'];
+        $_ctx = $GLOBALS['_ctx'];
+        $core = $GLOBALS['core'];
     
         $n = self::getPageNumber($args);
         if (!preg_match('#^([a-z]+)$#',$args,$m)) {
@@ -477,4 +477,3 @@ class urlTranslation extends dcUrlHandlers
         return;
     }
 }
-?>

@@ -9,15 +9,26 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * -- END LICENSE BLOCK ------------------------------------*/
 
-$(function()
-  {
+transToolBar = {};
+
+$(function() {
       $("#translationadder").bind('click',function(event) {addnew();});
       var i=1;
+      
       var formatField = $('#post_format').get(0);
+      
       while (document.getElementById('translation-'+i+'-area')) {
-	  decorate(i,formatField);
-	  i++;
+		  decorate(i,formatField);
+		  i++;
       };
+      
+      $(formatField).change(function() {
+        	for (var i in transToolBar) {
+    	        transToolBar[i]['excerpt'].switchMode(this.value);
+    	        transToolBar[i]['content'].switchMode(this.value);
+        	}
+        });
+      
       $('#translation-0-area').css('display','none');
       $("#translationfield .transgreyout").bind('change',function(event) {
 	      var xinput = event.target;
@@ -33,7 +44,7 @@ $(function()
 		  $(area).find('.todelete').remove();
 	      }
 	  });
-  });
+ });
 
 
 function addnew() {
@@ -49,22 +60,24 @@ function addnew() {
     $('#'+newname+' *[name]').attr('name',function(index) {
 	    return (this.name.replace(/_0/g,'_'+i));
 	});
-    decorate(i,formatField);
     $('#'+newname).css('display','block');
+    decorate(i,formatField);
 }
+
 function decorate(i,formatField) {
-    var stor=new jsToolBar(document.getElementById('post_translation_'+i));
-    var xstor=new jsToolBar(document.getElementById('post_translation_'+i+'_excerpt'));
-    var place='#translation-'+i+'-area';
-    var area='post_translation_'+i;
-    $(place+' #translation_'+i+'_langlabel').toggleWithLegend($(place).children().not('.classic').not('input[type=hidden]'),{
-	    fn: eval("a=function () { stor.switchMode(formatField.value);xstor.switchMode(formatField.value);}"),
-		cookie: 'dcx_post_translation_'+i,
-		nb: i
-		});
-    var fun=function() {
-	stor.switchMode(this.value);
-	xstor.switchMode(this.value);
-    };
-    $(formatField).change(fun);
+    
+    excerpt = new jsToolBar(document.getElementById('post_translation_'+i+'_excerpt'));
+    content = new jsToolBar(document.getElementById('post_translation_'+i));
+    excerpt.context = content.context = 'post';
+    excerpt.switchMode($(formatField).val());
+    content.switchMode($(formatField).val());
+    
+    transToolBar[i] = {};
+    transToolBar[i]['excerpt'] = excerpt;
+    transToolBar[i]['content'] = content;
+    
+    $('#post_translation_'+i+'_excerpt-area label').toggleWithLegend($('#post_translation_'+i+'_excerpt-area').children().not('label'),{
+        cookie: 'dcx_post_translation_excerpt_'+i,
+        hide: $('#post_translation_'+i+'_excerpt').val() == ''
+    });
 }

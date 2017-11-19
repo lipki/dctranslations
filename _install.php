@@ -81,4 +81,3 @@ if (1==1) {// always
     $core->con->commit();
     return true;
  }
-?>

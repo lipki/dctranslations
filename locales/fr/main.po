@@ -1,301 +1,148 @@
-# POT file for dctranslations plugin for Dotclear 2
-# Copyright (C) 2008 Jean-Christophe Dubacq
-# This file is distributed under the same license as the dctranslations package.
-# Jean-Christophe Dubacq <jcdubacq1@free.fr>, 2008
-#
+# Language: Français
+# Module: dctranslations - 1.14
+# Date: 2013-09-19 19:25:19
+# Translated with translater 2013.05.11
+
 msgid ""
 msgstr ""
-"Project-Id-Version: dctranslations plugin for Dotclear 2\n"
-"Report-Msgid-Bugs-To: Jean-Christophe Dubacq <jcdubacq1@free.fr>\n"
-"POT-Creation-Date: 2009-04-30 21:26+0200\n"
-"PO-Revision-Date: 2009-10-24 15:23+0100\n"
-"Last-Translator: Kozlika <kozlika@free.fr>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: dctranslations 1.14\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-09-19T19:25:19+00:00\n"
+"Last-Translator: kévin lepeltier\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#
-# File: ../../_admin.php, line: 24
-# File: ../../_admin.php, line: 24
-# File: ../../_admin.php, line: 25
-# File: ../../_admin.php, line: 25
+#: _admin.php:17
+msgid "The plugin \"Stacker\" must be present for dcTranslations. http://plugins.dotaddict.org/dc2/details/stacker"
+msgstr "Le plugin \"Stacker\" doit être présent pour dcTranslations. http://plugins.dotaddict.org/dc2/details/stacker"
+
+#: _admin.php:19
+msgid "The plugin \"Stacker\" must not be clear for dcTranslations."
+msgstr "Le plugin \"Stacker\" ne doit pas être désactivez pour dcTranslations."
+
+#: _admin.php:33
 msgid "manage translations and descriptions"
 msgstr "gérer les traductions et descriptions"
 
-#
-# File: ../../_admin.php, line: 26
-# File: ../../_admin.php, line: 48
-# File: ../../index.php, line: 147
-# File: ../../index.php, line: 148
-# File: ../../_widget.php, line: 26
-# File: ../../_widget.php, line: 27
-# File: ../../_admin.php, line: 26
-# File: ../../_admin.php, line: 48
-# File: ../../index.php, line: 147
-# File: ../../index.php, line: 148
-# File: ../../_widget.php, line: 26
-# File: ../../_widget.php, line: 27
-# File: ../../_admin.php, line: 27
-# File: ../../_admin.php, line: 49
-# File: ../../index.php, line: 170
-# File: ../../index.php, line: 174
-# File: ../../_widget.php, line: 27
-# File: ../../_widget.php, line: 28
-# File: ../../_admin.php, line: 27
-# File: ../../_admin.php, line: 49
-# File: ../../index.php, line: 170
-# File: ../../index.php, line: 174
-# File: ../../_widget.php, line: 27
-# File: ../../_widget.php, line: 28
-msgid "Translations"
-msgstr "Traductions"
-
-#
-# File: ../../_admin.php, line: 84
-# File: ../../_admin.php, line: 84
-# File: ../../_admin.php, line: 85
-# File: ../../_admin.php, line: 85
+#: _admin.php:90
 msgid "Translation:"
-msgstr "Traduction :"
+msgstr "Traduction"
 
-#
-# File: ../../_admin.php, line: 84
-# File: ../../_admin.php, line: 84
-# File: ../../_admin.php, line: 85
-# File: ../../_admin.php, line: 85
+#: _admin.php:90
 msgid "New translation:"
 msgstr "Nouvelle traduction :"
 
-#
-# File: ../../_admin.php, line: 87
-# File: ../../_admin.php, line: 87
-# File: ../../_admin.php, line: 88
-# File: ../../_admin.php, line: 88
+#: _admin.php:93
 msgid "Translation title:"
 msgstr "Titre de la traduction :"
 
-#
-# File: ../../_admin.php, line: 90
-# File: ../../_admin.php, line: 90
-# File: ../../_admin.php, line: 91
-# File: ../../_admin.php, line: 91
+#: _admin.php:96
 msgid "Delete this translation"
 msgstr "Effacer cette traduction"
 
-#
-# File: ../../_admin.php, line: 92
-# File: ../../_admin.php, line: 92
-# File: ../../_admin.php, line: 93
-# File: ../../_admin.php, line: 93
+#: _admin.php:98
 msgid "Translation excerpt:"
 msgstr "Extrait de la traduction :"
 
-#
-# File: ../../_admin.php, line: 94
-# File: ../../_admin.php, line: 94
-# File: ../../_admin.php, line: 95
-# File: ../../_admin.php, line: 95
+#: _admin.php:100
 msgid "Translation content:"
 msgstr "Contenu de la traduction :"
 
-#
-# File: ../../_admin.php, line: 109
-# File: ../../_admin.php, line: 109
-# File: ../../_admin.php, line: 110
-# File: ../../_admin.php, line: 110
+#: _admin.php:115
 msgid "New translation"
 msgstr "Nouvelle traduction"
 
-#
-# File: ../../class.translations.php, line: 74
-# File: ../../class.translations.php, line: 74
-# File: ../../class.translations.php, line: 75
-# File: ../../class.translations.php, line: 75
-#, php-format
-msgid "Language \"%s\" is not accepted"
-msgstr "La langue \"%s\" n'est pas acceptée"
-
-#
-# File: ../../class.translations.php, line: 77
-# File: ../../class.translations.php, line: 77
-# File: ../../class.translations.php, line: 78
-# File: ../../class.translations.php, line: 78
-#, php-format
-msgid "No attached post for language \"%s\""
-msgstr "Pas de billet joint pour la langue \"%s\""
-
-#
-# File: ../../class.translations.php, line: 84
-# File: ../../class.translations.php, line: 84
-# File: ../../class.translations.php, line: 85
-# File: ../../class.translations.php, line: 85
-#, php-format
-msgid "Language \"%s\" is already translated"
-msgstr "La traduction dans la langue \"%s\" existe déjà"
-
-#
-# File: ../../class.translations.php, line: 87
-# File: ../../class.translations.php, line: 87
-# File: ../../class.translations.php, line: 88
-# File: ../../class.translations.php, line: 88
-#, php-format
-msgid "No content for language \"%s\""
-msgstr "Pas de contenu pour la langue \"%s\""
-
-#
-# File: ../../class.translations.php, line: 97
-# File: ../../class.translations.php, line: 97
-# File: ../../class.translations.php, line: 98
-# File: ../../class.translations.php, line: 98
-#, php-format
-msgid "Language \"%s\" is the original language"
-msgstr "La langue \"%s\" est la langue originale"
-
-#
-# File: ../../index.php, line: 26
-# File: ../../index.php, line: 26
-# File: ../../index.php, line: 43
-# File: ../../index.php, line: 43
-msgid "String:"
-msgstr "Chaîne :"
-
-#
-# File: ../../index.php, line: 181
-# File: ../../index.php, line: 181
-#, php-format
-msgid "Dictionary has been updated for %s."
-msgstr "Le dictionnaire a été mis à jour pour %s."
-
-#
-# File: ../../index.php, line: 183
-# File: ../../index.php, line: 183
-msgid "No words in the dictionary (on this page)."
-msgstr "Aucun mot dans le dictionnaire (sur cette page)."
-
-#
-# File: ../../index.php, line: 155
-# File: ../../index.php, line: 155
-# File: ../../index.php, line: 185
-# File: ../../index.php, line: 185
-msgid "All posts have been successfully reindexed."
-msgstr "Tous les billets ont été réindexés avec succès."
-
-#
-# File: ../../index.php, line: 169
-# File: ../../_widget.php, line: 20
-# File: ../../_widget.php, line: 21
-# File: ../../index.php, line: 169
-# File: ../../_widget.php, line: 20
-# File: ../../_widget.php, line: 21
-# File: ../../index.php, line: 197
-# File: ../../_widget.php, line: 21
-# File: ../../_widget.php, line: 22
-# File: ../../index.php, line: 197
-# File: ../../_widget.php, line: 21
-# File: ../../_widget.php, line: 22
-msgid "Navigation language"
-msgstr "Langue pour la navigation"
-
-#
-# File: ../../index.php, line: 173
-# File: ../../index.php, line: 173
-# File: ../../index.php, line: 201
-# File: ../../index.php, line: 201
-msgid "Fallback language"
-msgstr "Langue de dernier recours"
-
-#
-# File: ../../index.php, line: 250
-# File: ../../index.php, line: 250
-# File: ../../index.php, line: 290
-# File: ../../index.php, line: 290
-msgid "Quick dictionary"
-msgstr "Dictionnaire rapide :"
-
-#
-# File: ../../index.php, line: 250
-# File: ../../index.php, line: 250
-# File: ../../index.php, line: 292
-# File: ../../index.php, line: 292
-msgid "Quick dictionary:"
-msgstr "Dictionnaire :"
-
-#
-# File: ../../index.php, line: 252
-# File: ../../index.php, line: 252
-# File: ../../index.php, line: 294
-# File: ../../index.php, line: 294
-msgid "Without tags"
-msgstr "Sans les tags"
-
-#
-# File: ../../index.php, line: 255
-# File: ../../index.php, line: 255
-# File: ../../index.php, line: 297
-# File: ../../index.php, line: 297
-msgid "With tags"
-msgstr "Avec les tags"
-
-#
-# File: ../../index.php, line: 259
-# File: ../../index.php, line: 259
-# File: ../../index.php, line: 301
-# File: ../../index.php, line: 301
-msgid "Without categories"
-msgstr "Sans les catégories"
-
-#
-# File: ../../index.php, line: 262
-# File: ../../index.php, line: 262
-# File: ../../index.php, line: 304
-# File: ../../index.php, line: 304
-msgid "With categories"
-msgstr "Avec les catégories"
-
-#
-# File: ../../index.php, line: 276
-# File: ../../index.php, line: 276
-# File: ../../index.php, line: 318
-# File: ../../index.php, line: 318
-msgid "Not translated yet:"
-msgstr "Pas encore traduit :"
-
-#
-# File: ../../_prepend.php, line: 46
-# File: ../../_prepend.php, line: 46
-# File: ../../_prepend.php, line: 47
-# File: ../../_prepend.php, line: 47
+#: _prepend.php:48
 msgid "Translates excerpts"
 msgstr "Traduit les extraits"
 
-#
-# File: ../../_prepend.php, line: 54
-# File: ../../_prepend.php, line: 54
-# File: ../../_prepend.php, line: 55
-# File: ../../_prepend.php, line: 55
+#: _prepend.php:56
 msgid "Translates contents"
 msgstr "Traduit les contenus"
 
-#
-# File: ../../_widget.php, line: 23
-# File: ../../_widget.php, line: 24
-# File: ../../_widget.php, line: 23
-# File: ../../_widget.php, line: 24
-# File: ../../_widget.php, line: 24
-# File: ../../_widget.php, line: 25
-# File: ../../_widget.php, line: 24
-# File: ../../_widget.php, line: 25
+#: _widgets.php:22
+#: _widgets.php:23
+#: index.php:198
+msgid "Navigation language"
+msgstr "Langue pour la navigation"
+
+#: _widgets.php:25
+#: _widgets.php:26
 msgid "Show articles only in"
 msgstr "Montrer seulement les billets en"
 
-#
-#
-# File: ../../index.php, line: 26
-# File: ../../index.php, line: 26
-# File: ../../index.php, line: 194
-# File: ../../index.php, line: 195
-#, fuzzy
-#~ msgid "Settings"
-#~ msgstr "Chaîne :"
+#: inc/class.translations.php:77
+msgid "Language \"%s\" is not accepted"
+msgstr "La langue \"%s\" n'est pas acceptée"
+
+#: inc/class.translations.php:80
+msgid "No attached post for language \"%s\""
+msgstr "Pas de billet joint pour la langue \"%s\""
+
+#: inc/class.translations.php:87
+msgid "Language \"%s\" is already translated"
+msgstr "La traduction dans la langue \"%s\" existe déjà"
+
+#: inc/class.translations.php:90
+msgid "No content for language \"%s\""
+msgstr "Pas de contenu pour la langue \"%s\""
+
+#: inc/class.translations.php:100
+msgid "Language \"%s\" is the original language"
+msgstr "La langue \"%s\" est la langue originale"
+
+#: index.php:44
+msgid "String:"
+msgstr "Chaîne :"
+
+#: index.php:182
+msgid "Dictionary has been updated for %s."
+msgstr "Le dictionnaire a été mis à jour pour %s."
+
+#: index.php:184
+msgid "No words in the dictionary (on this page)."
+msgstr "Aucun mot dans le dictionnaire (sur cette page)."
+
+#: index.php:186
+msgid "All posts have been successfully reindexed."
+msgstr "Tous les billets ont été réindexés avec succès."
+
+#: index.php:202
+msgid "Fallback language"
+msgstr "Langue de dernier recours"
+
+#: index.php:206
+#: index.php:316
+msgid "save"
+msgstr "Sauvegarder"
+
+#: index.php:291
+#: index.php:293
+msgid "Quick dictionary"
+msgstr "Dictionnaire rapide :"
+
+#: index.php:295
+msgid "Without tags"
+msgstr "Sans les tags"
+
+#: index.php:298
+msgid "With tags"
+msgstr "Avec les tags"
+
+#: index.php:302
+msgid "Without categories"
+msgstr "Sans les catégories"
+
+#: index.php:305
+msgid "With categories"
+msgstr "Avec les catégories"
+
+#: index.php:319
+msgid "Not translated yet:"
+msgstr "Pas encore traduit :"
+
+msgid "Quick dictionary:"
+msgstr "Dictionnaire :"
 

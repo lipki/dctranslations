@@ -29,7 +29,7 @@ class dctranslationsWidgets
         $w->showtranslations->setting('title',__('Title:'),__('Translations'));
     }
         
-    public static function initDefaultWidgets($w,&$d)
+    public static function initDefaultWidgets($w,$d)
     {
         $d['extra']->append($w->navlangs);
         $d['extra']->append($w->dctranslations);
@@ -145,4 +145,3 @@ class dctranslationsWidgets
         return $res;
     }
 }
-?>

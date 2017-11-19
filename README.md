@@ -13,14 +13,11 @@ visiteur (la navigation tout d'abord, et si un article existe en plusieurs
 versions, celle qui est préférée par le lecteur) tout en laissant accès au
 reste, bref, pour faire un réel site multilingue, cette extension dctranslations
 est pour vous.
-  ___________________________________________________________________________
 
-La page de maintenance de ce plugin est à cette adresse :
-[1]http://jean-christophe.dubacq.fr/post/dctranslations
+Installation
+============
 
-=== Installation ===
-
-Utilisez le fichier zippé fourni dans la page de maintenance. La zone
+Utilisez le fichier zippé fourni sur Dotaddict.org . La zone
 d'administration est dans Blog > Traductions. La langue du blog doit être mise
 à une valeur vide (c'est fait automatiquement lorsqu'on se rend sur les
 paramètres du blog et qu'on les sauve ; il est important d'aller ensuite dans la
@@ -32,10 +29,10 @@ about:config).
 Cette extension rajoute un panneau de commande pour choisir les langues
 utilisables par les lecteurs pour naviguer sur le site, une interface pour
 traduire les billets, les pages statiques ou des petits éléments de navigation.
-La traduction des widgets [2](definition) ou des descriptions de catégories sont
+La traduction des widgets ou des descriptions de catégories sont
 laissées à d'autres extensions (mentionnées plus loin).
 
-Ce plugin requiert l'usage du plugin [3]stacker, en version au moins 0.4.
+Ce plugin requiert l'usage du plugin stacker[3], en version au moins 0.4.
 
 Cette extension redéfinissant des codes internes standards de Dotclear, il est
 recommandé après l'avoir installé d'aller dans le tableau de bord et de faire
@@ -45,16 +42,16 @@ L'extension autolocale joue un rôle similaire à cette extension pour ce qui es
 de présenter le blog en changeant la langue de navigation automatiquement selon
 les préférences de l'utilisateur, mais aucun contrôle plus fin n'est permis (et
 pas de traduction de billets). Pour un système multilingue complet, il est
-recommandé d'installer la dernière version du plugin [4]translatedwidgets, ainsi
-que le plugin [5]kezako.
+recommandé d'installer la dernière version du plugin translatedwidgets[1], ainsi
+que le plugin kezako[2].
 
-La version courante de cette extension est 1.10.0 (local svn 406).
+Cette extension est sous la licence [4]GPL version 2.0.
 
-Cette extension est sous la licence [6]GPL version 2.0.
+Utilisation
+===========
 
-=== Utilisation ===
-
---- Simple utilisateur ---
+Simple utilisateur
+------------------
 
 Lorsque vous naviguez sur un blog muni de cette extension, Dotclear choisit
 votre langue préférée (soit la dernière que vous aviez choisie manuellement,
@@ -63,16 +60,15 @@ langue a été choisie par l'auteur du blog (si aucune de vos langues indiquées
 convient).
 
 Pour indiquer une langue à votre navigateur, il s'agit presque toujours d'une
-préférence que vous pouvez modifier. Cette page de l'organisation W3C indique
-(en anglais) selon votre navigateur où trouver ce réglage :
-[7]http://www.w3.org/International/questions/qa-lang-priorities.
+préférence que vous pouvez modifier.
 
 Lorsqu'un billet ou une page est disponible en plusieurs langues, la langue
 préférée est présentée par défaut. Un widget (qui peut avoir été ajouté au site)
 permet de choisir une autre traduction (si un locuteur multilingue désire voir
 une autre version).
 
---- Simple auteur ---
+Simple auteur
+-------------
 
 Lorsque vous composez (ou éditez) une page ou un billet, apparaît en dessous de
 la zone usuelle de saisie une zone pour saisir une nouvelle traduction à chaque
@@ -92,7 +88,8 @@ est modifiée manuellement. L'URL d'un billet est :
   * ...nomdusite/post/url-du-billet (prend automatiquement la langue préférée du
 lecteur)
 
---- Chargé de traduction ---
+Chargé de traduction
+--------------------
 
 Parce que tout n'est pas parfait, il est parfois nécessaire d'entrer à la main
 des éléments de traduction. Par exemple, la traduction des mots-clefs (tags),
@@ -135,7 +132,8 @@ l'avenir.
 
 L'effet est normalement visible immédiatement en zone publique.
 
---- Administrateur ---
+Administrateur
+--------------
 
 Comme précisé plus haut, il faut s'assurer que toutes les extensions requises
 sont présentes (et celles qui sont recommandées aussi), et que la langue du blog
@@ -165,71 +163,9 @@ seulement les billets en ... ». L'autre widget est gardé pour des raisons
 historiques, mais remplit moins de services (et s'appelle toujours « Langues du
 blog »).
 
-=== Pour signaler un bug ou aider cette extension ===
-
-Le mieux est de me contacter [8]par courrier (pour un bug) ou de laisser un
-commentaire (pour dire que vous avez testé cette extension). En cas de mise à
-jour, je modifierai ce billet.
-
-=== Liste des changements ===
-
-Note : ce journal est non-exhaustif, généré automatiquement, en anglais, et sans
-doute non-informatif avant 2009.
-  * Local SVN release 404 (jcdubacq,2009-10-03)
-  + Fix bug with postgresql when creating new post
-  + Update for DC 2.1.6: delete references in declarations
-  + Move _widget.php to _widgets.php
-  * Local SVN release 374 (jcdubacq,2009-04-30)
-  + Update translations
-  * Local SVN release 372 (jcdubacq,2009-04-30)
-  + Tabs in administration area
-  + List of updated words
-  + Clean up code
-  + New screenshots
-  * Local SVN release 364 (jcdubacq,2009-04-28)
-  + Allow deleting a translation in a more natural way
-  + Allow several translations in one edition cycle
-  * Local SVN release 358 (jcdubacq,2009-04-25)
-  + Remove unnecessary tweaks for translatedwidgets
-  * Local SVN release 343 (jcdubacq,2009-04-22)
-  + Reindent code
-  + Change licence to GPL version 2.0
-  * Local SVN release 322 (jcdubacq,2009-02-07)
-  + Translate blog name and description also
-  * Local SVN release 305 (jcdubacq,2009-01-27)
-  + Fix (mostly german) locales
-  * Local SVN release 299 (jcdubacq,2009-01-26)
-  + Adapt to version 0.3 of stacker (behavior initStacker)
-  * Local SVN release 278 (jcdubacq,2009-01-01)
-  + Finalize documentation, make new release utility, release
-  * Local SVN release 275 (jcdubacq,2008-12-26)
-  + Reinstate version keyword
-  * Local SVN release 274 (jcdubacq,2008-12-26)
-  + Delete svn counter
-  * Local SVN release 273 (jcdubacq,2008-12-26)
-  + Fix tag feed, add SVN revision to number
-  * Local SVN release 260 (jcdubacq,2008-11-18)
-  + Merge supportedlang and dctranslations
-  * Local SVN release 242 (jcdubacq,2008-11-11)
-  + Reformatting
-  * Local SVN release 168 (jcdubacq,2008-05-06)
-  + Order plugins and themes
-  * Local SVN release 43 (jcdubacq,2008-02-15)
-  + Adding all other personal plugins
-
-=== Travail restant à faire ===
-
-  * [DEL: Permettre la suppression de traductions de façon plus naturelle. :DEL]
-  * [DEL: Permettre plusieurs traductions en une seule sauvegarde. :DEL]
-  * translatedwidgets: faire un widget texte multilingue.
-
 Références
 
-   1. http://jean-christophe.dubacq.fr/post/dctranslations
-   2. http://fr.wikipedia.org/wiki/Widget
-   3. http://jean-christophe.dubacq.fr/post/stacker
-   4. http://jean-christophe.dubacq.fr/post/translatedwidgets
-   5. http://jean-christophe.dubacq.fr/post/kezako
-   6. http://fsffrance.org/gpl/gpl-fr.fr.html
-   7. http://www.w3.org/International/questions/qa-lang-priorities
-   8. http://jean-christophe.dubacq.fr/pages/Contact
+   1. http://plugins.dotaddict.org/dc2/details/translatedwidgets
+   2. http://plugins.dotaddict.org/dc2/details/kezako
+   3. http://plugins.dotaddict.org/dc2/details/stacker
+   4. http://www.gnu.org/licenses/gpl-2.0.html

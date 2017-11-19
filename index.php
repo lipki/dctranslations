@@ -290,7 +290,7 @@ if (1 == 1) {
     echo '<div class="multi-part" id="list" title="'.
         __('Quick dictionary').'">';
     echo '<form action="'.$pgct_url.'" method="post">';
-    echo '<p>'.__('Quick dictionary:');
+    echo '<p>'.__('Quick dictionary').' :';
     if ($withtags) {
         echo '&nbsp;<a href="'.$pgc_url.'">'.__('Without tags').'</a>&nbsp;';
     } else {
@@ -320,4 +320,3 @@ if (1 == 1) {
     echo '</div>';
     echo '</body></html>';
  }
-?>

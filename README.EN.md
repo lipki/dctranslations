@@ -10,12 +10,9 @@ readers to jump from one language to the other, while displaying a maximum of
 elements in each visitor's language (the navigation indications, and if an
 article exists in several languages, the one preferred by the reader), then,
 this plugin dctranslations is made for you to build your multilingual site.
-  ___________________________________________________________________________
 
-The maintenance page for this plugin is located at this address:
-[1]http://jean-christophe.dubacq.fr/post/dctranslations.
-
-=== Installation ===
+Installation
+============
 
 Use the zipped file attached to the maintenance page. The administration area is
 in Blog > Translations. The language of the blog must be put to a blank value
@@ -32,7 +29,7 @@ displayed in the public interface. The translation of the various widgets or
 other things such as the description of categories is left to other extensions
 (see below).
 
-This plugin requires the use of the [2]stacker plugin, at least version 0.4.
+This plugin requires the use of the [3]stacker plugin, at least version 0.4.
 
 This plugin redefines internal standard codes of Dotclear, it is thus
 recommended after install to do Extensions -> Maintenance -> Empty templates
@@ -42,15 +39,15 @@ The autolocale plugin plays a similar role to this plugin for the change of the
 navigation language according to the reader's preferences, but no finer control
 is allowed (and no post translation is possible). For a complete multilingual
 system, it is recommended that you also install the last version of the
-[3]translatedwidgets plugin, as well as the [4]kezako plugin.
+[1]translatedwidgets plugin, as well as the [2]kezako plugin.
 
-The current version of this plugin is 1.10.0 (local svn 406).
+This plugin is licensed under [4]GPL version 2.0.
 
-This plugin is licensed under [5]GPL version 2.0.
+Usage
+=====
 
-=== Usage ===
-
---- Simple user ---
+Simple user
+-----------
 
 When you browse a blog with this extension, Dotclear will automatically pick up
 your preferred language (either the last one you chose manually, or the one set
@@ -58,16 +55,15 @@ in your browser preferences). If no suitable language is found, a fallback
 language was chosen by the blog's author.
 
 You normally can setup your browser so that your preferred languages are sent in
-the right order. This page of the W3C organisation points out in which menu
-(according to your browser) this setup can take place:
-[6]http://www.w3.org/International/questions/qa-lang-priorities.
+the right order.
 
 When a post (or a page) is available in several languages, the preferred
 language is presented to you. A widget (which should usually be added to the
 site by the author) allows to choose another translation (if a reader
 understanding several languages wishes to see another version).
 
---- Simple author ---
+Simple author
+-------------
 
 When you are composing (or editing) a page or a post, a new area appears below
 the usual edit area (to make a new translation) each time you click on the "New
@@ -88,7 +84,8 @@ manually. The URL of a post is:
   * ...nomdusite/post/url-of-the-post (uses automatically the preferred language
 of the reader)
 
---- (Site-level) Translator ---
+(Site-level) Translator
+-----------------------
 
 Because nothing is really perfect, it is sometimes necessary to enter manually
 some key elements for the translation. For example, the translation of the tags,
@@ -123,9 +120,10 @@ displayed below).
 To delete a translation, the first column "String" has to be left intact, and
 all the translations have to be deleted. A better interface is in the works.
 
-L'effet est normalement visible immédiatement en zone publique.
+The effect is usually seen immediately in the public area.
 
---- Administrator ---
+Administrator
+-------------
 
 As explained above, all necessary extensions must be installed (also the ones
 that are recommended), that the blog's language is set to the empty string. The
@@ -151,68 +149,9 @@ their original language is the one selected, but all articles that have been
 translated (or whose original language is) in some language. This new widget is
 called "Only show posts in ...". The other one is kept for historical reasons.
 
-=== To tell me about a bug or helping this plugin ===
-
-The best way is to contact me [7]by mail (for a bug) or leave a comment (telling
-me you tested this extension) at the maintenance page. In case of an update, I
-will modify the maintenance page accordingly.
-
-Note: this changelog is not complete, automatically generated and probably not
-even informative before 2009.
-  * Local SVN release 404 (jcdubacq,2009-10-03)
-  + Fix bug with postgresql when creating new post
-  + Update for DC 2.1.6: delete references in declarations
-  + Move _widget.php to _widgets.php
-  * Local SVN release 374 (jcdubacq,2009-04-30)
-  + Update translations
-  * Local SVN release 372 (jcdubacq,2009-04-30)
-  + Tabs in administration area
-  + List of updated words
-  + Clean up code
-  + New screenshots
-  * Local SVN release 364 (jcdubacq,2009-04-28)
-  + Allow deleting a translation in a more natural way
-  + Allow several translations in one edition cycle
-  * Local SVN release 358 (jcdubacq,2009-04-25)
-  + Remove unnecessary tweaks for translatedwidgets
-  * Local SVN release 343 (jcdubacq,2009-04-22)
-  + Reindent code
-  + Change licence to GPL version 2.0
-  * Local SVN release 322 (jcdubacq,2009-02-07)
-  + Translate blog name and description also
-  * Local SVN release 305 (jcdubacq,2009-01-27)
-  + Fix (mostly german) locales
-  * Local SVN release 299 (jcdubacq,2009-01-26)
-  + Adapt to version 0.3 of stacker (behavior initStacker)
-  * Local SVN release 278 (jcdubacq,2009-01-01)
-  + Finalize documentation, make new release utility, release
-  * Local SVN release 275 (jcdubacq,2008-12-26)
-  + Reinstate version keyword
-  * Local SVN release 274 (jcdubacq,2008-12-26)
-  + Delete svn counter
-  * Local SVN release 273 (jcdubacq,2008-12-26)
-  + Fix tag feed, add SVN revision to number
-  * Local SVN release 260 (jcdubacq,2008-11-18)
-  + Merge supportedlang and dctranslations
-  * Local SVN release 242 (jcdubacq,2008-11-11)
-  + Reformatting
-  * Local SVN release 168 (jcdubacq,2008-05-06)
-  + Order plugins and themes
-  * Local SVN release 43 (jcdubacq,2008-02-15)
-  + Adding all other personal plugins
-
-=== To do ===
-
-  * [DEL: Allow deleting a translation in a more natural way. :DEL]
-  * [DEL: Allow several translations in one edition cycle. :DEL]
-  * translatedwidget: make the Text plugin care for several languages.
-
 References
 
-   1. http://jean-christophe.dubacq.fr/post/dctranslations
-   2. http://jean-christophe.dubacq.fr/post/stacker
-   3. http://jean-christophe.dubacq.fr/post/translatedwidgets
-   4. http://jean-christophe.dubacq.fr/post/kezako
-   5. http://www.gnu.org/licenses/gpl-2.0.html
-   6. http://www.w3.org/International/questions/qa-lang-priorities
-   7. http://jean-christophe.dubacq.fr/pages/Contact
+   1. http://plugins.dotaddict.org/dc2/details/translatedwidgets
+   2. http://plugins.dotaddict.org/dc2/details/kezako
+   3. http://plugins.dotaddict.org/dc2/details/stacker
+   4. http://www.gnu.org/licenses/gpl-2.0.html
