@@ -76,6 +76,7 @@ if (1==1) {// always
     $cur->translation_excerpt_xhtml='';
     $cur->translation_content_xhtml='';
     $cur->translation_words='';
+    $cur->translation_url='';
     $cur->post_id=null;
     $cur->insert();
     $core->con->commit();
