@@ -80,17 +80,6 @@ $pct_url=$p_url.'&withcat='.$withcat.'&withtags='.$withtags;
 $pgct_url=$p_url.'&page='.$page.'&withcat='.$withcat.'&withtags='.$withtags;
 
 try {
-    if ($core->blog->settings->lang) {
-        $core->blog->settings->addNameSpace('system');
-        $core->blog->settings->system->put('lang','');
-    }
-    // Create settings if they don't exist
-    $core->blog->settings->addNameSpace('ptrans');
-    if ($core->blog->settings->ptrans->ptrans_fallback_language === null) {
-        $core->blog->settings->ptrans->put('ptrans_active_languages','en,fr','string','Navigation language',true,true);
-        $core->blog->settings->ptrans->put('ptrans_fallback_language','en','string','Fallback language',true,true);
-        http::redirect($p_url);
-    }
     $active_languages = $core->blog->settings->ptrans->ptrans_active_languages;
     $fallback_language = $core->blog->settings->ptrans->ptrans_fallback_language;
     if (!$active_languages) {

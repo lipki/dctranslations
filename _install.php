@@ -10,6 +10,8 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 # -- END LICENSE BLOCK ------------------------------------
 
+echo 'install-translation';
+
 if (!defined('DC_CONTEXT_ADMIN')) { exit; }
 
 if (1==1) {// always
@@ -19,6 +21,14 @@ if (1==1) {// always
     if (version_compare($core->getVersion('dctranslations'),$version,'>=')) {
         return;
     }
+
+    // add namespace and setting
+    $core->blog->settings->addNameSpace('system');
+    $core->blog->settings->system->put('lang','');
+    $core->blog->settings->addNameSpace('ptrans');
+    $core->blog->settings->ptrans->put('ptrans_active_languages','en,fr','string','Navigation language',true,true);
+    $core->blog->settings->ptrans->put('ptrans_fallback_language','en','string','Fallback language',true,true);
+    $core->blog->settings->addNameSpace('widgets');
 
     /* Database schema
      -------------------------------------------------------- */
@@ -76,6 +86,7 @@ if (1==1) {// always
     $cur->translation_excerpt_xhtml='';
     $cur->translation_content_xhtml='';
     $cur->translation_words='';
+    $cur->translation_url='';
     $cur->post_id=null;
     $cur->insert();
     $core->con->commit();
